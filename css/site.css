@@ -1,0 +1,28 @@
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+    background-color:black;
+
+}
+
+
+@media(min-width: 768px){
+    .news-input{
+        width: 50%;
+    }
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+div.card-body h1, .card-body h2, div.card-bod h3, div.card-body  h4, div.card-bod h5 div.card-bo h6, div.card-body p{
+
+    font-size: 0.5em;
+    
+
+
+}
