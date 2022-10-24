@@ -19,7 +19,7 @@
   </button>
   <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+      <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Multi-Financial Calculator</h5>
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
@@ -35,9 +35,10 @@
             Other Calculators
           </a>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="fci.html">Calculator that determines future values</a></li>
-            <li><a class="dropdown-item" href="poa.html">calculator that determines present values</a></li>
+            <li><a class="dropdown-item" href="fci.html">CD Calculator</a></li>
+            <li><a class="dropdown-item" href="poa.html">Present Value of Annuity Calculator</a></li>
             <li><a class="dropdown-item" href="fahToCelsius.html">Converting Fahrenheit to Celsius</a></li>
+            <li><a class="dropdown-item" href="celToFah.html">Converting Celsius to Fahrenheit</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
@@ -47,7 +48,7 @@
       </ul>
             <form class="d-flex mt-3" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-success" type="submit">Search</button>
+              <button class="btn btn-primary" type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -55,36 +56,73 @@
 </nav>
             
 
-    <div class="container">
-
-        <h1>Mortgage Calculator</h1>
-
-      <div class="mb-3 w-25">
-        <label for="mortgage" class="form-label">Loan amount</label>
-        <input type="text" class="form-control" id="mortgageid" name="mrtgname" >
-      </div>
-      <div class="mb-3 w-25">
-        <label for="ipy" class="form-label">Interest per year</label>
-        <input type="text" class="form-control" id="ipyid" name="ipyname">
-      </div>
-      <div class="mb-3 w-25">
-        <label for="" class="form-label">Loan term per year</label>
-        <input type="text" class="form-control" id="ltpid" name="ltpname" >
-      </div>
-      <div class="mb-3 w-25">
-        <input type="text" class="form-control" id="rcvalue" name="rcname">
-      </div>
-    <div><p><input type="button" id="sbt" value="Submit" class="btn btn-primary"/></p>
-      <p><input type="reset" id="rst" value="Reset Form"/></p></div>
-    </div>
+<div class="container">
+  <h3>CD Calculator</h3>
+  <div id="main" class="card card-body">
+    <form class="form-inline mb-3">
     
-  
+    <div class="mb-3 w-25">
+      <label for="cdname" class="form-label">Deposite Amount($)</label>
+      <input type="text" class="form-control" id="cdid" name="cdname" >
+    </div>
+    <div class="mb-3 w-25">
+      <label for="cdterm" class="form-label">CD term lenght</label>
+      <input type="text" class="form-control" id="cdtermid" name="cdtermname">
+    </div>
+    <div class="mb-3 w-25">
+      <label for="" class="form-label">Annual Percentage Rate(%)</label>
+      <input type="text" class="form-control" id="cdinterestid" name="cdinterestname" >
+    </div>
+    <div class="mb-3 w-25">
+      <input type="text" class="form-control" id="cdvalueid" name="cdvaluename" readonly>
+    </div>
+  <p><input type="button" id="sbt" value="Calculate" class="btn btn-primary"/></p>
+
+  <div>
+    <p><input type="button" id="str" value="Reset" class="btn btn-primary" /></p>
+
+  </div>
+    
+  </div>
+  </div>
+
+  <br>
+
+  <!-- boxes -->
+<section  class="p-5 bg-secondary text-light">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      
+      <div class="col-md p-5">
+        <h2>Certificates of Deposit</h2>
+        
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, neque ducimus. Obcaecati laudantium nulla deserunt nostrum molestias eum, iste voluptatibus culpa in quos porro dolores voluptatem esse! Corporis, aliquid cumque? </p>
+           
+      </div>
+      <div class="col-md">
+        <img src="images/fci.svg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+
+</section>
+  <br>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
   </script>  
 
-<script src="scripts/site.js"></script>
+<script src="scripts/fci.js"></script>
+
+<!-- footer -->
+<footer class="p-5 bg-secondary text-white text-center position-relative">
+  <div class="container">
+    <p class="lead">
+      Copyright &copy;2022 YearUp Appdev Workshop_week_3 LCJ_Ibh
+    </p>
+  </div>
+</footer>
+
 
 </body>
 

@@ -35,23 +35,3 @@ function calculatePayment()
 
 
 
-// scripts for converting from fahrenheit to celcius
-
-var fahid;
-var celsid;
-var rcvale2;
-var fahname;
-
-window.onload =function()
-{
-  document.getElementById("fahid");
-  document.getElementById("sbtn").onclick = getValues;
-};
-
-function getValues()
-{
-  fahid=getElementById("fahid").value;
-  celsid=getElementById("celsid").value;
-
-}
-
